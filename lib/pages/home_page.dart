@@ -49,10 +49,6 @@ class _HomePageState extends State<HomePage> {
         // print('Latitude : $lat');
         // print('Longitude : $lon');
       });
-    } else {
-      Center(
-        child: Text('No Data'),
-      );
     }
   }
 
