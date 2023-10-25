@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:weather_app/const/const.dart';
+import 'package:weather_app/component/const.dart';
 import 'package:weather_app/pages/home_page.dart';
 
 class SplashPage extends StatefulWidget {
@@ -55,7 +55,9 @@ class _SplashPageState extends State<SplashPage> {
                   width: 150.0,
                 ),
                 const SizedBox(height: 16),
-                const CircularProgressIndicator(),
+                const CircularProgressIndicator(
+                  color: Colors.white,
+                ),
               ],
             ),
           ),

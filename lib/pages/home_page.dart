@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:location/location.dart';
 import 'package:http/http.dart' as http;
-import 'package:weather_app/const/const.dart';
+import 'package:weather_app/component/const.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -49,6 +49,10 @@ class _HomePageState extends State<HomePage> {
         // print('Latitude : $lat');
         // print('Longitude : $lon');
       });
+    } else {
+      Center(
+        child: Text('No Data'),
+      );
     }
   }
 
@@ -122,7 +126,10 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   description ?? 'waiting...',
-                  style: const TextStyle(color: whiteColor),
+                  style: const TextStyle(
+                    color: whiteColor,
+                    fontSize: 14,
+                  ),
                 ),
               ],
             ),
